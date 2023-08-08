@@ -1,6 +1,6 @@
 <div align="center">
 
-# asdf-detekt [![Build](https://github.com/mattrussell-sonocent/asdf-detekt/actions/workflows/build.yml/badge.svg)](https://github.com/mattrussell-sonocent/asdf-detekt/actions/workflows/build.yml) [![Lint](https://github.com/mattrussell-sonocent/asdf-detekt/actions/workflows/lint.yml/badge.svg)](https://github.com/mattrussell-sonocent/asdf-detekt/actions/workflows/lint.yml)
+# asdf-detekt [![Build](https://github.com/glean-notes/asdf-detekt/actions/workflows/build.yml/badge.svg)](https://github.com/glean-notes/asdf-detekt/actions/workflows/build.yml) [![Lint](https://github.com/glean-notes/asdf-detekt/actions/workflows/lint.yml/badge.svg)](https://github.com/glean-notes/asdf-detekt/actions/workflows/lint.yml)
 
 [detekt](https://github.com/glean-notes/asdf-detekt) plugin for the [asdf version manager](https://asdf-vm.com).
 
@@ -15,10 +15,7 @@
 
 # Dependencies
 
-**TODO: adapt this section**
-
-- `bash`, `curl`, `tar`: generic POSIX utilities.
-- `SOME_ENV_VAR`: set this environment variable in your shell config to load the correct version of tool x.
+- `bash`, `curl`, `unzip`: generic POSIX utilities.
 
 # Install
 
@@ -27,7 +24,7 @@ Plugin:
 ```shell
 asdf plugin add detekt
 # or
-asdf plugin add detekt https://github.com/mattrussell-sonocent/asdf-detekt.git
+asdf plugin add detekt https://github.com/glean-notes/asdf-detekt.git
 ```
 
 detekt:
@@ -53,8 +50,8 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/mattrussell-sonocent/asdf-detekt/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/glean-notes/asdf-detekt/graphs/contributors)!
 
 # License
 
-See [LICENSE](LICENSE) © [Matt Russell](https://github.com/mattrussell-sonocent/)
+See [LICENSE](LICENSE) © [Glean](https://github.com/glean-notes/)
