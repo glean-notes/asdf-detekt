@@ -15,9 +15,9 @@ release_file="$ASDF_DOWNLOAD_PATH/$TOOL_NAME-$ASDF_INSTALL_VERSION.zip"
 download_release "$ASDF_INSTALL_VERSION" "$release_file"
 
 if ! type "unzip" &>/dev/null; then
-  echo "ERROR: Command 'unzip' not found."
-  echo "unzip must be installed on your system."
-  exit 1
+	echo "ERROR: Command 'unzip' not found."
+	echo "unzip must be installed on your system."
+	exit 1
 fi
 
 unzip -q "$release_file" -d "$ASDF_DOWNLOAD_PATH" || exit 1

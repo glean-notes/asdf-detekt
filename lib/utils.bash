@@ -37,7 +37,7 @@ download_release() {
 	version="$1"
 	filename="$2"
 
-  url="$GH_REPO/releases/download/v${version}/detekt-cli-${version}.zip"
+	url="$GH_REPO/releases/download/v${version}/detekt-cli-${version}.zip"
 
 	echo "* Downloading $TOOL_NAME release $version..."
 	curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
@@ -54,7 +54,7 @@ install_version() {
 
 	(
 		mkdir -p "$install_path"
-		cp -r "$ASDF_DOWNLOAD_PATH"/detekt-cli-$version/* "$install_path"
+		cp -r "$ASDF_DOWNLOAD_PATH"/detekt-cli-"$version"/* "$install_path"
 		cp "$install_path/bin/detekt-cli" "$install_path/bin/detekt"
 
 		local tool_cmd
@@ -63,7 +63,7 @@ install_version() {
 
 		echo "$TOOL_NAME $version installation was successful!"
 	) || (
-		rm -rf "$install_path/*"
+		rm -rf "${install_path:?}/*"
 		fail "An error occurred while installing $TOOL_NAME $version."
 	)
 }
